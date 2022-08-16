@@ -16,7 +16,7 @@ const CategoryCard = ({ image, title }: CardProps) => {
         }}
       />
       <Text className="absolute bottom-1 left-1 text-white font-bold">
-        CategoryCard
+        {title}
       </Text>
     </TouchableOpacity>
   );

@@ -9,6 +9,7 @@ import {
 } from "react-native-heroicons/outline";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Categories from "../components/Categories";
+import FeaturedRow from "../components/FeaturedRow";
 
 const HomeScreen = () => {
   const navigation: any = useNavigation();
@@ -50,6 +51,12 @@ const HomeScreen = () => {
 
       <ScrollView className="bg-gray-100 flex-1">
         <Categories />
+
+        <FeaturedRow
+          id="1"
+          title="Featured"
+          description="Paid placements from our partners"
+        />
       </ScrollView>
     </SafeAreaView>
   );
